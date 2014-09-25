@@ -8,7 +8,7 @@ Format? Handouts?
 
 ## 2-3 examples where scripting saves massive time/effort/errors
   * Scraping data from the web
-  * Analyzing multiple data sets the same way (with plots)
+  * Analyzing multiple Excel data sets the same way (with plots)
 
 ## Why R?
   * Why not matlab/python/perl/Java/SAS/...?
