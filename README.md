@@ -53,8 +53,9 @@ Format? Handouts?
      * Shalizi's statistical computing course
      * *The Art of R programming*
      * Duncan Temple Lang's courses
-     * Advanced trickery: the R inferno
-     * For programmers: https://github.com/tdsmith/aRrgh
+     * R "Gotcha's" 
+       * *The R Inferno*
+       * For programmers: http://tim-smith.us/arrgh/
 
 # ==============LUNCH==============
 
