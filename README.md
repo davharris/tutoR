@@ -26,7 +26,7 @@ Format? Handouts?
   * scripts versus interactive use
   * projects
 
-## R language
+## A 2.5-hour slog through the R language
   * R as a calculator
   * Errors
   * Warnings
@@ -53,7 +53,8 @@ Format? Handouts?
      * Shalizi's statistical computing course
      * *The Art of R programming*
      * Duncan Temple Lang's courses
-
+     * Advanced trickery: the R inferno
+     * For programmers: https://github.com/tdsmith/aRrgh
 
 # ==============LUNCH==============
 
@@ -66,12 +67,17 @@ Format? Handouts?
   * Plotting options (briefly flashed on screen for future reference)
     * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty
   * Other graphics systems
+  * More:
+    * 
 
 ## Data analysis
   * t-test, chi-sqare, linear regression
   * summary, str
   * formula syntax
   * brief glm
+  * More:
+    * Bolker
+    * ?
 
 # ==============SLEEP==============
 
