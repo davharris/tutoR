@@ -1,15 +1,16 @@
+# tutoR (outline)
+
 ---------------------
 
 Format? Handouts?
 
 ---------------------
 
-# 2-3 examples where scripting saves massive time/effort/errors
+## 2-3 examples where scripting saves massive time/effort/errors
   * Scraping data from the web
-  * Analyzing multiple data sets the same way
-  * Systematic plotting
+  * Analyzing multiple data sets the same way (with plots)
 
-# Why R?
+## Why R?
   * Why not matlab/python/perl/Java/SAS/...?
     * It's what your colleagues use
       * packages to do stuff you want
@@ -17,12 +18,12 @@ Format? Handouts?
       * share code with colleagues
       * It's free
 
-# Rstudio
+## Rstudio
   * Where commands go
   * scripts versus interactive use
   * projects
 
-# R language
+## R language
   * R as a calculator
   * Errors
   * Warnings
@@ -49,7 +50,7 @@ Format? Handouts?
 
 ==============LUNCH==============
 
-# Plotting
+## Plotting
   * plot()
   * scatterplots
   * histograms
@@ -58,14 +59,14 @@ Format? Handouts?
   * par()
   * Other graphics systems
 
-# Data analysis
+## Data analysis
   * t-test, chi-sqare, linear regression
   * summary, str
   * formula syntax
   * brief glm
 
-# Advanced: text
+## Advanced: text
   * 
 
-# Advanced: functions
+## Advanced: functions
   * 
