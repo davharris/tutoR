@@ -30,11 +30,17 @@ Format? Handouts?
 
 ## Getting help
   * ?function_name
-  * Davis R Users Group (and mailing list: read and/or ask)
+    * Need to know the function name
+    * Reading help files is a skill.  Might need to look in 3-4 sections.
+    * It gets easier
+    * "help files are a last resort. With any luck someone's written a tutorial somewhere on the web." -- https://twitter.com/pitakakariki/status/515256714396848128
+  *  Vignettes
+     * vignette(topic = "topic_name", package = "package_name")
+     * vignette PDFs on CRAN
   * Google, http://www.rseek.org/
-  * Stack Overflow / Cross Validated (read and/or ask)
-  * R-help lists (read-only)
-  * vignette(topic = "topic_name", package = "package_name")
+    * Stack Overflow / Cross Validated (read and/or ask)
+    * R-help lists (read-only)
+  * Davis R Users Group (and mailing list: read and/or ask)
 
 ## Reading the help files
 
