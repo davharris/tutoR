@@ -104,4 +104,5 @@ Format? Handouts?
   * Keep your analysis and write-up in sync
   * http://andrewgelman.com/2014/09/19/never-happened-r-markdown/
   * RMarkdown, sweave, built into RStudio
+  * Rstudio Projects
   
