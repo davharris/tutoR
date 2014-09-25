@@ -17,6 +17,7 @@ Format? Handouts?
       * interfaces with everything else
       * share code with colleagues
       * It's free
+  * Next-best language for ecologists is probably Python
 
 ## Rstudio
   * Where commands go
@@ -38,17 +39,21 @@ Format? Handouts?
   * Data frames ("related vectors in table format")
   * Functions on data.frames (e.g. colMeans)
   * Lists
+  * str()
   * [ versus [[ versus $
   * Matrices are not data.frames!
   * Types/classes
   * Floating point
   * NA
-  * Loops and *apply
+  * *apply
+  * Loops
   * More: 
      * Shalizi's statistical computing course
+     * *The Art of R programming*
+     * Duncan Temple Lang's courses
 
 
-==============LUNCH==============
+# ==============LUNCH==============
 
 ## Plotting
   * plot()
@@ -56,7 +61,8 @@ Format? Handouts?
   * histograms
   * pairs plots
   * Adding lines/points to the canvas
-  * par()
+  * Plotting options (briefly flashed on screen for future reference)
+    * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty
   * Other graphics systems
 
 ## Data analysis
@@ -66,10 +72,22 @@ Format? Handouts?
   * brief glm
 
 ## Advanced: text
-  * 
+  * paste
+  * equality
+  * regex matching
 
 ## Advanced: functions
-  * 
+  * Write your own procedures
+  * scope:
+    * Keep different field sites' "rainfall" variables from clobbering each other
 
 ## Advanced: Formatting Excel data
+  * One "thing" per cell
+  * One row per replicate
+  * One column per variable
+  * Long "better" than wide
+  * Don't rely on anything that isn't text
+
+## Advanced: Reproducible research
   * 
+  
