@@ -46,18 +46,22 @@ Format? Handouts?
 
 ## A 2.5-hour slog through the R language
   * R as a calculator
+    * Arithmetic operators
+    * Equality
+    * Using functions like `mean`
   * Errors
   * Warnings
   * Assignment ("data can have names")
   * The workspace, ls(), rm()
   * Vectors ("data can be structured", elements can have names)
-  * Functions on vectors (mean, sum, var, max)
-  * Vector arithmetic
-  * Recycling rule
-  * Comparison (==, all.equal())
-  * Subsetting ("getting data back out")
+    * Functions on vectors (mean, sum, var, max)
+    * Vector arithmetic
+    * Recycling rule
+    * Subsetting ("getting data back out")
+    * Comparison (==, all.equal())
   * Data frames ("related vectors in table format")
-  * Functions on data.frames (e.g. colMeans)
+    * This is where most of your data will live
+    * Functions on data.frames (e.g. colMeans)
   * Lists
   * str()
   * [ versus [[ versus $
