@@ -71,17 +71,19 @@ Format? Handouts?
   * formula syntax
   * brief glm
 
-## Advanced: text
+# ==============SLEEP==============
+
+## Advanced topics: text
   * paste
   * equality
   * regex matching
 
-## Advanced: functions
+## Advanced topics: functions
   * Write your own procedures
   * scope:
     * Keep different field sites' "rainfall" variables from clobbering each other
 
-## Advanced: Formatting Excel data
+## Advanced topics: Formatting Excel data
   * One "thing" per cell
   * One row per replicate
   * One column per variable
@@ -89,5 +91,8 @@ Format? Handouts?
   * Don't rely on anything that isn't text
 
 ## Advanced: Reproducible research
-  * 
+  * Minimize copy-pasting
+  * Keep your analysis and write-up in sync
+  * http://andrewgelman.com/2014/09/19/never-happened-r-markdown/
+  * RMarkdown, sweave, built into RStudio
   
