@@ -70,3 +70,6 @@ Format? Handouts?
 
 ## Advanced: functions
   * 
+
+## Advanced: Formatting Excel data
+  * 
