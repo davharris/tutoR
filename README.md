@@ -18,6 +18,8 @@ Format? Handouts?
       * share code with colleagues
       * It's free
   * Next-best language for ecologists is probably Python
+    * "better" general-purpose language than R
+    * Catching up to R for scientific data analysis
 
 ## Rstudio
   * Where commands go
