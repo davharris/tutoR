@@ -58,6 +58,7 @@ Format? Handouts?
     * Recycling rule
     * Subsetting ("getting data back out")
     * Comparison (==, all.equal())
+  * Subsetting ("get stuff back out of the vector")
   * Types/classes
   * Data frames ("related vectors in table format")
     * This is where most of your data will live
