@@ -58,15 +58,14 @@ Format? Handouts?
     * Recycling rule
     * Subsetting ("getting data back out")
     * Comparison (==, all.equal())
+  * Types/classes
   * Data frames ("related vectors in table format")
     * This is where most of your data will live
+    * Rows are replicates; columns are variables
+    * Different kinds of vectors in each column
     * Functions on data.frames (e.g. colMeans)
-  * Lists
-  * str()
   * [ versus [[ versus $
   * Matrices are not data.frames!
-  * Types/classes
-  * Floating point
   * NA
   * Loops ("Do something a bunch of times")
     * "Do the stuff in brackets once for each one of these things"
