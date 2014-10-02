@@ -12,10 +12,10 @@ Format? Handouts?
 
 ## Why R?
   * It's what your colleagues use
-  * packages to do stuff you want
-  * interfaces with everything else
-  * share code with colleagues
-  * It's free
+    * packages to do stuff you want
+    * interfaces with everything else
+    * share code with colleagues
+    * It's free
   * Next-best language for ecologists is probably Python
     * Also free, very widely used outside of ecology
     * "better" general-purpose language than R
