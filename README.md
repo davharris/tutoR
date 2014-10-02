@@ -82,6 +82,18 @@ Format? Handouts?
 
 # ==============LUNCH=============
 
+## Data import
+* read.csv()
+  * strings as factors
+  * header
+  * sep
+  * quote
+* RCurl
+* SQL/Excel/ODBC
+* Manuals
+  * Quick: http://www.statmethods.net/input/importingdata.html
+  * Comprehensive: http://cran.r-project.org/doc/manuals/r-release/R-data.html
+
 ## Plotting
 * plot()
   * scatterplots
