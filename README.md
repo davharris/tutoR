@@ -7,8 +7,8 @@ Format? Handouts?
 ---------------------
 
 ## 2-3 examples where scripting saves massive time/effort/errors
-  * Scraping data from the web
-  * Analyzing multiple Excel data sets the same way (with plots)
+  * Scraping data from the web & saving as .csv
+  * Analyzing multiple .csv data sets the same way (with plots)
 
 ## Why R?
   * It's what your colleagues use
@@ -21,7 +21,6 @@ Format? Handouts?
     * "better" general-purpose language than R
     * Better in some niches (text, image processing, ARCGIS integration)
     * Catching up to R for scientific data analysis
-  * 
 
 ## Rstudio
   * Where commands go
@@ -39,10 +38,8 @@ Format? Handouts?
      * vignette PDFs on CRAN
   * Google, http://www.rseek.org/
     * Stack Overflow / Cross Validated (read and/or ask)
-    * R-help lists (read-only)
+    * R-help lists (read-only!)
   * Davis R Users Group (and mailing list: read and/or ask)
-
-## Reading the help files
 
 ## A 2.5-hour slog through the R language
   * R as a calculator
@@ -50,9 +47,11 @@ Format? Handouts?
     * Equality
     * Using functions like `mean`
   * Errors
+    * "Something went so badly wrong that I stopped and gave up before I broke something"
   * Warnings
+    * "Something *might* be wrong, but I kept going"
   * Assignment ("data can have names")
-  * The workspace, ls(), rm()
+  * The workspace
   * Vectors ("data can be structured", elements can have names)
     * Functions on vectors (mean, sum, var, max)
     * Vector arithmetic
@@ -69,8 +68,8 @@ Format? Handouts?
   * Types/classes
   * Floating point
   * NA
-  * *apply
-  * Loops
+  * Loops ("Do something a bunch of times")
+    * "Do the stuff in brackets once for each one of these things"
   * More: 
      * Shalizi's statistical computing course
      * *The Art of R programming*
@@ -103,6 +102,7 @@ Format? Handouts?
   * brief glm
   * More:
     * Bolker
+    * McElreath
     * ?
 
 # ==============SLEEP==============
