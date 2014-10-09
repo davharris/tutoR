@@ -71,11 +71,15 @@ Format? Handouts?
   * Rows are replicates; columns are variables
   * Different kinds of vectors in each column
   * Functions on data.frames (e.g. colMeans)
+* Learning about your objects
+  * Rstudio, str
+  * length, dim, dimnames, class
 * [ versus [[ versus $
 * Matrices are not data.frames!
 * NA
 * Loops ("Do something a bunch of times")
   * "Do the stuff in brackets once for each one of these things"
+  * 
 * More: 
    * Shalizi's statistical computing course
    * *The Art of R programming*
