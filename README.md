@@ -34,7 +34,12 @@ Format? Handouts?
   * Reading help files is a skill.  Might need to look in 3-4 sections.
   * It gets easier
   * "help files are a last resort. With any luck someone's written a tutorial somewhere on the web." -- https://twitter.com/pitakakariki/status/515256714396848128
-*  Vignettes
+* Task views (for sifting through packages on a given topic):
+  * Ecology: http://cran.r-project.org/web/views/Environmetrics.html
+  * Spatial: http://cran.r-project.org/web/views/Spatial.html
+  * Phylogenetics: http://cran.r-project.org/web/views/Phylogenetics.html
+  * Genetics: http://cran.r-project.org/web/views/Genetics.html
+*  Vignettes (for package tutorials etc):
   * vignette(topic = "topic_name", package = "package_name")
   * vignette PDFs on CRAN
 * Google, http://www.rseek.org/
