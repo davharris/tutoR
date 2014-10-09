@@ -4,8 +4,20 @@ download.file("ftp://ftpext.usgs.gov/pub/er/md/laurel/BBS/DataFiles/Species/Finc
 data <- read.csv(unzip(temp))
 unlink(temp)
 
-library(dplyr)
+# Plot total counts per year
 
+years = sort(unique(data$Year))
+
+counts = sapply(
+  years,
+  function(year){
+    sum(data$SpeciesTotal[data$Year == year])
+  }
+)
+plot(counts ~ years, type = "o")
+
+
+# Do the same thing with dplyr
+library(dplyr)
 data %>% group_by("Year") %>% summarise(sum(SpeciesTotal)) %>% plot(type = "o")
-data %>% group_by("Year") %>% summarise(mean(SpeciesTotal)) %>% plot(type = "o")
 
