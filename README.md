@@ -121,6 +121,9 @@ Format? Handouts?
   * McElreath
   * ?
 
+## Homework??
+* 
+
 # ==============SLEEP==============
 
 ## Advanced topics: text
