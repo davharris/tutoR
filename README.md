@@ -60,7 +60,22 @@ Format? Handouts?
 * R as a calculator
   * Arithmetic operators
   * Equality
-  * Using functions like `mean`
+* Using functions like `mean`
+  * Functions are verbs.
+    * Verbs can have modifiers
+    * Functions can have arguments 
+  * Anatomy of a function call:
+    * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+  * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
+  * Operators are just functions that go between their arguments
+* Parts of a help file (using `rep` as our example)
+  * **Title:** big picture in big text
+  * **Description:** summary
+  * **Usage:** very minimal examples
+  * **Arguments:** list of ways you can customize the function's action for your needs
+  * **Details:** Details
+  * **Value:** What you get out of the function
+  * **Examples** (consider starting here): ways to use the function
 * Errors
   * "Something went so badly wrong that I stopped and gave up before I broke something"
 * Warnings
@@ -68,6 +83,7 @@ Format? Handouts?
 * Assignment ("data can have names")
 * The workspace
 * Vectors ("data can be structured")
+  * Make a vector with the `c` ("combine") function.
   * Elements have a position and (optionally) names
   * The names are stored in a separate vector
   * Functions on vectors (mean, sum, var, max)
