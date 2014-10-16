@@ -112,6 +112,7 @@ Format? Handouts?
   * "Do the stuff in brackets once for each one of these things"
   * lapply/sapply
 * More: 
+   * R Basics workshop: http://rbasicsworkshop.weebly.com/presentations--exersices.html
    * Shalizi's statistical computing course
    * *The Art of R programming*
    * Duncan Temple Lang's courses
