@@ -1,23 +1,14 @@
-# Download the finches file from BBS website
 temp <- tempfile()
 download.file("ftp://ftpext.usgs.gov/pub/er/md/laurel/BBS/DataFiles/Species/Finches.zip",temp)
-data <- read.csv(unzip(temp))
+finch <- read.csv(unzip(temp))
 unlink(temp)
 
-# Plot total counts per year
+temp <- tempfile()
+download.file("ftp://ftpext.usgs.gov/pub/er/md/laurel/BBS/DataFiles/Routes.zip",temp)
+routes <- read.csv(unzip(temp))
+unlink(temp)
 
-years = sort(unique(data$Year))
+data = merge(finch, routes)
 
-counts = sapply(
-  years,
-  function(year){
-    sum(data$SpeciesTotal[data$Year == year])
-  }
-)
-plot(counts ~ years, type = "o")
-
-
-# Do the same thing with dplyr
-library(dplyr)
-data %>% group_by("Year") %>% summarise(sum(SpeciesTotal)) %>% plot(type = "o")
+plot(data[data$Aou == 5190, c("Longi", "Lati")])
 
