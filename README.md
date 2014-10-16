@@ -58,14 +58,20 @@ Format? Handouts?
   * "Something *might* be wrong, but I kept going"
 * Assignment ("data can have names")
 * The workspace
-* Vectors ("data can be structured", elements can have names)
+* Vectors ("data can be structured")
+  * Elements have a position and (optionally) names
+  * The names are stored in a separate vector
   * Functions on vectors (mean, sum, var, max)
   * Vector arithmetic
   * Recycling rule
   * Subsetting ("getting data back out")
   * Comparison (==, all.equal())
 * Subsetting ("get stuff back out of the vector")
-* Types/classes
+* Classes of vectors
+  * Numeric
+  * Integer
+  * character
+  * Factor
 * Data frames ("related vectors in table format")
   * This is where most of your data will live
   * Rows are replicates; columns are variables
@@ -79,7 +85,7 @@ Format? Handouts?
 * NA
 * Loops ("Do something a bunch of times")
   * "Do the stuff in brackets once for each one of these things"
-  * 
+  * lapply/sapply
 * More: 
    * Shalizi's statistical computing course
    * *The Art of R programming*
@@ -97,6 +103,8 @@ Format? Handouts?
   * header
   * sep
   * quote
+  * write.csv works similarly
+    * file = "where_to_put_me.csv"
 * RCurl
 * SQL/Excel/ODBC
 * Manuals
@@ -111,6 +119,9 @@ Format? Handouts?
 * Adding lines/points to the canvas
 * Plotting options (briefly flashed on screen for future reference)
   * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty, mgp, axes
+* Exporting figures
+  * Rstudio graphics device
+  * PDF, PNG
 * Other graphics systems:
   * ggplot/ggvis
   * lattice
