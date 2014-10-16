@@ -23,8 +23,14 @@ library(maps)
 library(mapdata)
 library(mapproj)
 
+
+# Create a file in my current directory to hold a high-resolution map
 png("map.png", width = 3200, height = 2800, res = 1000)
+
+# Tweak the margins
 par("mai" = c(0, 0, 0, 0))
+
+# Plot the country borders using my preferred map projection, etc
 map(
   database = "worldHires", 
   proj = "albers", 
@@ -40,7 +46,11 @@ map(
   orientation = c(95, -102, 0),
   lwd = 1
 )
+
+# Add points for the bird observations, using my preferred colors, etc.
 points(mapproject(latlon$Longi, latlon$Lati), pch = 16, cex = .15, col = "red")
+
+# Seal up the file so it can be viewed
 dev.off()
 
 
