@@ -14,6 +14,20 @@ Format? Handouts?
 * Understand what's available
 * Understand some of the big picture
 * Learn enough to get started on your own
+* **Topic list:**
+  * Talking to R
+  * Getting help
+  * When things go wrong
+  * R building blocks
+  * Plotting
+  * Data import
+  * Loops
+  * Stats
+  * Advanced topics:
+    * text
+    * functions
+    * formatting excel data
+    * reproducibility
 
 ## 9:20: 2-3 examples where scripting saves massive time/effort/errors
   * Scraping data from the web & saving as .csv
