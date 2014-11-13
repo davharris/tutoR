@@ -56,7 +56,7 @@ Format? Handouts?
 * Assignment ("data can have names")
 * The workspace/environment
 
-## Getting help
+## 10:30 Getting help
 * ?function_name OR help("function_name").
 * Parts of a help file (using `rep` as our example)
   * **Title:** big picture in big text
@@ -84,8 +84,9 @@ Format? Handouts?
   * Stack Overflow / Cross Validated (read and/or ask)
   * R-help lists (read-only!)
 * Davis R Users Group (and mailing list: read and/or ask)
+* **Real example of getting help for plotting**
 
-## When things go wrong
+## 11:00 When things go wrong
 * Errors
   * "Something went so badly wrong that I stopped and gave up before I broke something"
 * Warnings
@@ -94,7 +95,7 @@ Format? Handouts?
   * "I told R to do the wrong thing"
   * These are the scariest, because you don't know your code is wrong.
 
-# R building blocks
+# 11:15 R building blocks
 * Vectors ("data can be structured")
   * Make a vector with the `c` ("combine") function.
   * Elements have a position and (optionally) names
@@ -134,7 +135,7 @@ Format? Handouts?
      * *The R Inferno*
      * For programmers: http://tim-smith.us/arrgh/
 
-# ==============LUNCH=============
+# Noon: LUNCH
 
 ## Data import
 * read.csv()
