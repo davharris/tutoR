@@ -118,7 +118,7 @@ Format? Handouts?
   * "Something *might* be wrong, but I kept going"
 * Bugs:
   * "I told R to do the wrong thing"
-  * These are the scariest, because you don't know your code is wrong.
+  * These are the scariest, because you don't always know your code is wrong.
 
 ## 11:10 Break
 
