@@ -56,7 +56,7 @@ Format? Handouts?
   * R-help lists (read-only!)
 * Davis R Users Group (and mailing list: read and/or ask)
 
-## A 2.5-hour slog through the R language
+## A 2-hour slog through the R language
 * R as a calculator
   * Arithmetic operators
   * Equality
