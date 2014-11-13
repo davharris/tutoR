@@ -1,87 +1,74 @@
-# tutoR (outline)
-
----------------------
-
-Format? Handouts?
-
----------------------
-
-## 9:15: Workshop goals:
-* This won't make you an expert. It probably won't even be enough to make you comfortable with R.
+# 9:15: Workshop goals:
+* Learn enough to get started on your own
 * Show cool things you can do with R that will save you time and make you more productive.
   * Don't try to absorb *everything*.  You can always go back to the slides later.
-* Understand what's possible
-* Understand what's available
-* Understand some of the big picture
-* Learn enough to get started on your own
 * **Topic list:**
-  * Talking to R
-  * Getting help
-  * When things go wrong
-  * R building blocks
-  * Plotting
-  * Data import
-  * Loops
-  * Stats
-  * Advanced topics:
+  * **Saturday morning**
+    * Introduction
+    * Talking to R
+    * Getting help
+    * When things go wrong
+    * R building blocks
+  * **Saturday afternoon**
+    * Plotting
+    * Data import
+    * Loops
+    * Stats
+  * **Sunday**
     * text
     * functions
     * formatting excel data
     * reproducibility
 
-## 9:20: 2-3 examples where scripting saves massive time/effort/errors
+# 9:20: 2-3 examples where scripting saves massive time/effort/errors
   * Scraping data from the web & saving as .csv
   * Analyzing multiple .csv data sets the same way (with plots)
 
-## 9:30 Why R?
+# 9:30 Why R?
 * It's what your colleagues use
   * packages to do stuff you want
   * interfaces with everything else
   * share code with colleagues
-  * It's free
 * Next-best language for ecologists is probably Python
   * Also free, very widely used outside of ecology
   * "better" general-purpose language than R
-  * Better in some niches (text, image processing, ARCGIS integration)
   * Catching up to R for scientific data analysis
 
-## 9:40 Rstudio
-* Where commands go
+# 9:40 Rstudio
+* Command line
 * scripts versus interactive use
-* projects
-* tabs
-* Files
-* Environment
+* tabs:
+  - Files
+  - Plots
+  - Help
+  - tabbed scripts
 
 # 15-min Break?
 
-## 10:00 Talking to R
-* R as a calculator
-  * Arithmetic operators
-  * Equality
-    * `TRUE` and `FALSE`
-* Using functions like `mean` and `plot`
- * examples:
+# 10:00 Talking to R
+##R as a calculator**
+* Arithmetic operators
+
+## Assignment ("data can have names")
+* `<-` and `=`
+* Pass by value
+  * `x=2; y=x; x=3; y==2`
+* The workspace/environment
+
+## Using functions
+* examples:
   * `sum(1, 2, 3, 4)` or `sum(1:4)`
   * `plot(cars)`
   * `plot(iris, col = iris$species)`
- * Functions are verbs.
-   * Verbs can have modifiers
-   * Functions can have arguments 
- * Anatomy of a function call:
-   * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
-   * `...`
- * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
- * Operators are just functions that go between their arguments: 
- *     `+`(1, 2)==1+2
-* Assignment ("data can have names")
- * `<-` and `=`
- * Pass by value
-   * `x=2; y=x; x=3; y==2`
-* The workspace/environment
-* Packages: `(library)`
+* Functions are verbs.
+  * Verbs can have modifiers
+  * Functions can have arguments 
+* Anatomy of a function call:
+  * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+  * `...`
+* Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
 
-## 10:30 Getting help
+# 10:30 Getting help
 * ?function_name OR help("function_name").
 * Parts of a help file (using `rep` as our example)
   * **Title:** big picture in big text
@@ -111,7 +98,7 @@ Format? Handouts?
 * Davis R Users Group (and mailing list: read and/or ask)
 * **Real example of getting help for plotting**
 
-## 11:00 When things go wrong
+# 11:00 When things go wrong
 * Errors
   * "Something went so badly wrong that I stopped and gave up before I broke something"
 * Warnings
@@ -120,9 +107,9 @@ Format? Handouts?
   * "I told R to do the wrong thing"
   * These are the scariest, because you don't always know your code is wrong.
 
-## 11:10 Break
+# 11:10 Break
 
-## 11:25 R building blocks
+# 11:25 R building blocks
 * Vectors ("data can be structured")
   * Make a vector with the `c` ("combine") function.
   * Elements have a position and (optionally) names
@@ -162,7 +149,7 @@ Format? Handouts?
 
 # Noon: LUNCH
 
-## 12:45: Plotting
+# 12:45: Plotting
 * plot()
   * scatterplots
   * Other forms, *depending on the form of your data*
@@ -178,9 +165,9 @@ Format? Handouts?
   * ggplot/ggvis
   * lattice
  
-## 1:30 break
+# 1:30 break
 
-## 1:45 Data import
+# 1:45 Data import
 * read.csv()
   * strings as factors!
   * header
@@ -195,16 +182,16 @@ Format? Handouts?
   * Comprehensive: http://cran.r-project.org/doc/manuals/r-release/R-data.html
 * Something spatial
 
-## 2:30 Break
+# 2:30 Break
 
-## 2:40 loops
+# 2:40 loops
 * "Do something a bunch of times"
   * "Do the stuff in brackets once for each one of these things"
   * lapply/sapply/replicate?
 
-## 3:15 break
+# 3:15 break
 
-## 3:25 Statistical analysis
+# 3:25 Statistical analysis
 * t-test, chi-sqare, linear regression
 * summary, str
 * formula syntax
@@ -214,22 +201,22 @@ Format? Handouts?
   * McElreath
   * ?
 
-## Homework??
+# Homework??
 * Download, summarize, and plot some data
 
 # ==============SLEEP==============
 
-## Advanced topics: text
+# Advanced topics: text
 * paste
 * equality
 * regex matching
 
-## Advanced topics: functions
+# Advanced topics: functions
 * Write your own procedures
 * scope:
   * Keep different field sites' "rainfall" variables from clobbering each other
 
-## Advanced topics: Formatting Excel data
+# Advanced topics: Formatting Excel data
 * One "thing" per cell
 * One row per replicate
 * One column per variable
@@ -239,6 +226,16 @@ Format? Handouts?
 * https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/02-common-mistakes.md
 * https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/04-quality-control.md
 * https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/05-exporting-data.md
+* Helpful tools:
+ * http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/
+
+# Advanced: Reproducible research
+* Minimize copy-pasting
+* Keep your analysis and write-up in sync
+* http://andrewgelman.com/2014/09/19/never-happened-r-markdown/
+* RMarkdown, sweave, built into RStudio
+* Rstudio Projects
+  b.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/05-exporting-data.md
 * Helpful tools:
  * http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/
 
