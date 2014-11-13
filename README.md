@@ -95,7 +95,9 @@ Format? Handouts?
   * "I told R to do the wrong thing"
   * These are the scariest, because you don't know your code is wrong.
 
-# 11:15 R building blocks
+## 11:10 Break
+
+## 11:25 R building blocks
 * Vectors ("data can be structured")
   * Make a vector with the `c` ("combine") function.
   * Elements have a position and (optionally) names
