@@ -140,10 +140,21 @@ Format? Handouts?
 
 # Noon: LUNCH
 
-## 12:45: loops
-* "Do something a bunch of times"
-  * "Do the stuff in brackets once for each one of these things"
-  * lapply/sapply/replicate?
+## 12:45: Plotting
+* plot()
+  * scatterplots
+  * Other forms, *depending on the form of your data*
+* histograms
+* pairs plots
+* Adding lines/points to the canvas
+* Plotting options (briefly flashed on screen for future reference)
+  * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty, mgp, axes
+* Exporting figures
+  * Rstudio graphics device
+  * PDF, PNG
+* Other graphics systems:
+  * ggplot/ggvis
+  * lattice
  
 ## 1:30 break
 
@@ -160,23 +171,14 @@ Format? Handouts?
 * Manuals
   * Quick: http://www.statmethods.net/input/importingdata.html
   * Comprehensive: http://cran.r-project.org/doc/manuals/r-release/R-data.html
+* Something spatial
 
 ## 2:30 Break
 
-## 2:40 Plotting
-* plot()
-  * scatterplots
-* histograms
-* pairs plots
-* Adding lines/points to the canvas
-* Plotting options (briefly flashed on screen for future reference)
-  * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty, mgp, axes
-* Exporting figures
-  * Rstudio graphics device
-  * PDF, PNG
-* Other graphics systems:
-  * ggplot/ggvis
-  * lattice
+## 2:40 loops
+* "Do something a bunch of times"
+  * "Do the stuff in brackets once for each one of these things"
+  * lapply/sapply/replicate?
 
 ## 3:15 break
 
