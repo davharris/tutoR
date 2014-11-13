@@ -124,9 +124,6 @@ Format? Handouts?
 * [ versus [[ versus $
 * Matrices are not data.frames!
 * NA
-* Loops ("Do something a bunch of times")
-  * "Do the stuff in brackets once for each one of these things"
-  * lapply/sapply
 * More: 
    * R Basics workshop: http://rbasicsworkshop.weebly.com/presentations--exersices.html
    * Shalizi's statistical computing course
@@ -139,7 +136,14 @@ Format? Handouts?
 
 # Noon: LUNCH
 
-## 12:45 Data import
+## 12:45: loops
+* "Do something a bunch of times"
+  * "Do the stuff in brackets once for each one of these things"
+  * lapply/sapply/replicate?
+ 
+## 1:30 break
+
+## 1:45 Data import
 * read.csv()
   * strings as factors
   * header
@@ -153,9 +157,9 @@ Format? Handouts?
   * Quick: http://www.statmethods.net/input/importingdata.html
   * Comprehensive: http://cran.r-project.org/doc/manuals/r-release/R-data.html
 
-## 1:45 Break
+## 2:30 Break
 
-## 2:00 Plotting
+## 2:40 Plotting
 * plot()
   * scatterplots
 * histograms
@@ -170,9 +174,9 @@ Format? Handouts?
   * ggplot/ggvis
   * lattice
 
-## 2:45 break
+## 3:15 break
 
-## 3:00 Statistical analysis
+## 3:25 Statistical analysis
 * t-test, chi-sqare, linear regression
 * summary, str
 * formula syntax
