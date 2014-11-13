@@ -45,14 +45,18 @@ Format? Handouts?
 * R as a calculator
   * Arithmetic operators
   * Equality
-* Using functions like `mean`
-  * Functions are verbs.
-    * Verbs can have modifiers
-    * Functions can have arguments 
-  * Anatomy of a function call:
-    * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
-  * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
-  * Operators are just functions that go between their arguments
+* Using functions like `mean` and `plot`
+ * examples:
+  * `sum(1, 2, 3, 4)` or `sum(1:4)`
+  * `plot(cars)`
+  * `plot(iris, col = iris$species)`
+ * Functions are verbs.
+   * Verbs can have modifiers
+   * Functions can have arguments 
+ * Anatomy of a function call:
+   * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+ * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
+ * Operators are just functions that go between their arguments
 * Assignment ("data can have names")
 * The workspace/environment
 
