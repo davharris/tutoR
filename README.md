@@ -60,6 +60,9 @@ Format? Handouts?
  * Operators are just functions that go between their arguments: 
  *     `+`(1, 2)==1+2
 * Assignment ("data can have names")
+ * `<-` and `=`
+ * Pass by value
+   * `x=2; y=x; x=3; y==2`
 * The workspace/environment
 
 ## 10:30 Getting help
