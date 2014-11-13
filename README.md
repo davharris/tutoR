@@ -55,8 +55,10 @@ Format? Handouts?
    * Functions can have arguments 
  * Anatomy of a function call:
    * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+   * `...`
  * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
- * Operators are just functions that go between their arguments
+ * Operators are just functions that go between their arguments: 
+ *     `+`(1, 2)==1+2
 * Assignment ("data can have names")
 * The workspace/environment
 
