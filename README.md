@@ -6,7 +6,7 @@ Format? Handouts?
 
 ---------------------
 
-## Workshop goals:
+## 9:15: Workshop goals:
 * This won't make you an expert. It probably won't even be enough to make you comfortable with R.
 * Show cool things you can do with R that will save you time and make you more productive.
   * Don't try to absorb *everything*.  You can always go back to the slides later.
@@ -15,11 +15,11 @@ Format? Handouts?
 * Understand some of the big picture
 * Learn enough to get started on your own
 
-## 2-3 examples where scripting saves massive time/effort/errors
+## 9:20: 2-3 examples where scripting saves massive time/effort/errors
   * Scraping data from the web & saving as .csv
   * Analyzing multiple .csv data sets the same way (with plots)
 
-## Why R?
+## 9:30 Why R?
 * It's what your colleagues use
   * packages to do stuff you want
   * interfaces with everything else
@@ -31,13 +31,42 @@ Format? Handouts?
   * Better in some niches (text, image processing, ARCGIS integration)
   * Catching up to R for scientific data analysis
 
-## Rstudio
+## 9:40 Rstudio
 * Where commands go
 * scripts versus interactive use
 * projects
+* tabs
+* Files
+* Environment
+
+# 15-min Break?
+
+## 10:00 Talking to R
+* R as a calculator
+  * Arithmetic operators
+  * Equality
+* Using functions like `mean`
+  * Functions are verbs.
+    * Verbs can have modifiers
+    * Functions can have arguments 
+  * Anatomy of a function call:
+    * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+  * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
+  * Operators are just functions that go between their arguments
+* Assignment ("data can have names")
+* The workspace/environment
 
 ## Getting help
 * ?function_name OR help("function_name").
+* Parts of a help file (using `rep` as our example)
+  * **Title:** big picture in big text
+  * **Description:** summary
+  * **Usage:** very minimal examples
+  * **Arguments:** list of ways you can customize the function's action for your needs
+  * **Details:** Details
+  * **Value:** What you get out of the function
+  * **Examples** (consider starting here): ways to use the function
+* Help files are annoying.
   * Operators and special things need backticks
   * Need to know the function name
   * Reading help files is a skill.  Might need to look in 3-4 sections.
@@ -56,35 +85,16 @@ Format? Handouts?
   * R-help lists (read-only!)
 * Davis R Users Group (and mailing list: read and/or ask)
 
-## A 2-hour slog through the R language
-* R as a calculator
-  * Arithmetic operators
-  * Equality
-* Using functions like `mean`
-  * Functions are verbs.
-    * Verbs can have modifiers
-    * Functions can have arguments 
-  * Anatomy of a function call:
-    * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
-  * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
-  * Operators are just functions that go between their arguments
-* Parts of a help file (using `rep` as our example)
-  * **Title:** big picture in big text
-  * **Description:** summary
-  * **Usage:** very minimal examples
-  * **Arguments:** list of ways you can customize the function's action for your needs
-  * **Details:** Details
-  * **Value:** What you get out of the function
-  * **Examples** (consider starting here): ways to use the function
-
-### Break?
-
+## When things go wrong
 * Errors
   * "Something went so badly wrong that I stopped and gave up before I broke something"
 * Warnings
   * "Something *might* be wrong, but I kept going"
-* Assignment ("data can have names")
-* The workspace
+* Bugs:
+  * "I told R to do the wrong thing"
+  * These are the scariest, because you don't know your code is wrong.
+
+# R building blocks
 * Vectors ("data can be structured")
   * Make a vector with the `c` ("combine") function.
   * Elements have a position and (optionally) names
