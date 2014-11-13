@@ -139,7 +139,7 @@ Format? Handouts?
 
 # Noon: LUNCH
 
-## Data import
+## 12:45 Data import
 * read.csv()
   * strings as factors
   * header
@@ -153,7 +153,9 @@ Format? Handouts?
   * Quick: http://www.statmethods.net/input/importingdata.html
   * Comprehensive: http://cran.r-project.org/doc/manuals/r-release/R-data.html
 
-## Plotting
+## 1:45 Break
+
+## 2:00 Plotting
 * plot()
   * scatterplots
 * histograms
@@ -168,7 +170,9 @@ Format? Handouts?
   * ggplot/ggvis
   * lattice
 
-## Statistical analysis
+## 2:45 break
+
+## 3:00 Statistical analysis
 * t-test, chi-sqare, linear regression
 * summary, str
 * formula syntax
