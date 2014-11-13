@@ -59,6 +59,7 @@ Format? Handouts?
 * R as a calculator
   * Arithmetic operators
   * Equality
+    * `TRUE` and `FALSE`
 * Using functions like `mean` and `plot`
  * examples:
   * `sum(1, 2, 3, 4)` or `sum(1:4)`
@@ -78,6 +79,7 @@ Format? Handouts?
  * Pass by value
    * `x=2; y=x; x=3; y==2`
 * The workspace/environment
+* Packages: `(library)`
 
 ## 10:30 Getting help
 * ?function_name OR help("function_name").
