@@ -119,6 +119,7 @@ Format? Handouts?
   * Integer
   * character
   * Factor
+    * Factors are useful, but they're also weird hybrid objects that don't always work as expected
 * Data frames ("related vectors in table format")
   * This is where most of your data will live
   * Rows are replicates; columns are variables
@@ -162,7 +163,7 @@ Format? Handouts?
 
 ## 1:45 Data import
 * read.csv()
-  * strings as factors
+  * strings as factors!
   * header
   * sep
   * quote
@@ -215,6 +216,12 @@ Format? Handouts?
 * One column per variable
 * Long "better" than wide
 * Don't rely on anything that isn't text
+* https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/01-format-data.md
+* https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/02-common-mistakes.md
+* https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/04-quality-control.md
+* https://github.com/datacarpentry/datacarpentry/blob/master/lessons/excel/ecology-examples/05-exporting-data.md
+* Helpful tools:
+ * http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/
 
 ## Advanced: Reproducible research
 * Minimize copy-pasting
