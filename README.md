@@ -76,6 +76,7 @@ Format? Handouts?
   * **Details:** Details
   * **Value:** What you get out of the function
   * **Examples** (consider starting here): ways to use the function
+### Break?
 * Errors
   * "Something went so badly wrong that I stopped and gave up before I broke something"
 * Warnings
