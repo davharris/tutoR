@@ -6,8 +6,8 @@ Format? Handouts?
 
 ---------------------
 
-## Workshop goals: this won't make you an expert.
-* It probably won't even be enough to make you comfortable with R.
+## Workshop goals:
+* This won't make you an expert. It probably won't even be enough to make you comfortable with R.
 * Show cool things you can do with R that will save you time and make you more productive.
   * Don't try to absorb *everything*.  You can always go back to the slides later.
 * Understand what's possible
