@@ -213,7 +213,7 @@ Format? Handouts?
   * ?
 
 ## Homework??
-* 
+* Download, summarize, and plot some data
 
 # ==============SLEEP==============
 
