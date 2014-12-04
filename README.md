@@ -163,17 +163,19 @@
     * insects["flies"]
     * insects[2]
     * insects[c(FALSE, TRUE, FALSE)]
-* Vectors always belong to *one* type
+* Vectors always belong to *one* "type"
 * Classes of vectors
-  * logical
-  * integer
-  * numeric
-  * character
-  * R "promotes" vectors 
-  * Factors: weird hybrid objects that don't always work as expected!
+  * logical: TRUE or FALSE
+  * integer: ..., -1, 0, 1, 2, ...
+  * numeric: 3.141592653589793115998, 2.718281828459045090796
+  * character: "anything", "ΣΔΘ™", 
+  * R "promotes" vectors when concatenated:
+    * c(insects, "not a number")
+* Factors: weird hybrid objects that don't always work as expected!
 * Data frames ("related vectors in table format")
   * This is where most of your data will live
   * Rows are replicates; columns are variables
+    * insect_df = data.frame(site1 = insects, site2 = insects2)
   * Different kinds of vectors in each column
   * Functions on data.frames (e.g. colMeans)
 * Learning about your objects
