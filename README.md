@@ -183,6 +183,10 @@
   * Rows are replicates; columns are variables
     * InsectSprays
     * plot(count ~ spray, data = InsectSprays)
+* Data frames ("related vectors in table format")
+  * This is where most of your data will live
+  * Rows are replicates; columns are variables
+    * insect_df = data.frame(site1 = insects, site2 = insects2)
   * Different kinds of vectors in each column
   * Functions on data.frames (e.g. colMeans)
 * Learning about your objects
