@@ -14,6 +14,7 @@
     * Data import
     * Loops
     * Stats
+**
   * **Sunday**
     * text
     * functions
@@ -43,13 +44,19 @@
   - Help
   - tabbed scripts
 
-# 15-min Break?
-
 # 10:00 Talking to R
-##R as a calculator**
+##R can do everything your graphic calculator can
 * Arithmetic operators
+  - works like you'd expect.  * is for multiplication. ^ is for exponents. Parentheses separate things.
+* plot(function(x) sin(x^2), from = 0, to = 5)
 
 ## Assignment ("data can have names")
+* Need a way to refer back to our data. 
+  * Don't always want to type 525600 for number of minutes in a year.
+  * Want to separate data from code. Only need to update fly biomass once. 
+    * Insect biomass = fly biomass + beetle biomass + bug biomass
+    * Total biomass = fly biomass + beetle biomass + bug biomass + algae biomass
+  * Stay in sync
 * `<-` and `=`
 * Pass by value
   * `x=2; y=x; x=3; y==2`
@@ -57,16 +64,26 @@
 
 ## Using functions
 * examples:
+  * sin(1), log10(5), 
   * `sum(1, 2, 3, 4)` or `sum(1:4)`
-  * `plot(cars)`
-  * `plot(iris, col = iris$species)`
+  * `plot(iris)`
 * Functions are verbs.
+  * "Take this thing and do the function to it"
   * Verbs can have modifiers
+    * "Pet the cat *carefully*"
   * Functions can have arguments 
+    * `plot(iris, col = iris$Species)`
 * Anatomy of a function call:
   * name of function, open paren, (optional) argument name, equals, argument value, comma, more arguments, closing paren.
+  * plot(log(1:10), type = "o")
   * `...`
 * Some arguments have default values and don't need to be specified.  Predetermined values are listed on help page
+* There are tons of functions available!
+  * Most common R usage pattern: use pre-written functions on your custom data
+    * do standard actions to your unique stuff
+* Will also discuss how to write your own functions
+
+# Break
 
 # 10:30 Getting help
 * ?function_name OR help("function_name").
@@ -79,9 +96,10 @@
   * **Value:** What you get out of the function
   * **Examples** (consider starting here): ways to use the function
 * Help files are annoying.
-  * Operators and special things need backticks
   * Need to know the function name
-  * Reading help files is a skill.  Might need to look in 3-4 sections.
+  * Operators and special things need backticks
+  * Written for programmers, by programmers
+  * Reading help files is a skill.  Might need to look in 3-4 different sections.
   * It gets easier
   * "help files are a last resort. With any luck someone's written a tutorial somewhere on the web." -- https://twitter.com/pitakakariki/status/515256714396848128
 * Task views (for sifting through packages on a given topic):
@@ -97,46 +115,6 @@
   * R-help lists (read-only!)
 * Davis R Users Group (and mailing list: read and/or ask)
 * **Real example of getting help for plotting**
-
-# 11:00 When things go wrong
-* Errors
-  * "Something went so badly wrong that I stopped and gave up before I broke something"
-* Warnings
-  * "Something *might* be wrong, but I kept going"
-* Bugs:
-  * "I told R to do the wrong thing"
-  * These are the scariest, because you don't always know your code is wrong.
-
-# 11:10 Break
-
-# 11:25 R building blocks
-* Vectors ("data can be structured")
-  * Make a vector with the `c` ("combine") function.
-  * Elements have a position and (optionally) names
-  * The names are stored in a separate vector
-  * Functions on vectors (mean, sum, var, max)
-  * Vector arithmetic
-  * Recycling rule
-  * Subsetting ("getting data back out")
-  * Comparison (==, all.equal())
-* Subsetting ("get stuff back out of the vector")
-* Classes of vectors
-  * Numeric
-  * Integer
-  * character
-  * Factor
-    * Factors are useful, but they're also weird hybrid objects that don't always work as expected
-* Data frames ("related vectors in table format")
-  * This is where most of your data will live
-  * Rows are replicates; columns are variables
-  * Different kinds of vectors in each column
-  * Functions on data.frames (e.g. colMeans)
-* Learning about your objects
-  * Rstudio, str
-  * length, dim, dimnames, class
-* [ versus [[ versus $
-* Matrices are not data.frames!
-* NA
 * More: 
    * R Basics workshop: http://rbasicsworkshop.weebly.com/presentations--exersices.html
    * Shalizi's statistical computing course
@@ -147,6 +125,78 @@
      * *The R Inferno*
      * For programmers: http://tim-smith.us/arrgh/
 
+# 11:00 When things go wrong
+* Errors
+  * "Something went so badly wrong that I stopped and gave up before I broke something"
+  * 1 + "two"
+    * Error in 1 + "two" : non-numeric argument to binary operator
+* Warnings
+  * "Something *might* be wrong, but I kept going"
+  * 1:3 + 1:4
+    * Warning message:
+      In 1:3 + 1:4 :
+      longer object length is not a multiple of shorter object length
+* Bugs:
+  * "I told R to do the wrong thing"
+  * These are the scariest, because you don't always know your code is wrong.
+* [More on errors and warnings](http://www.burns-stat.com/documents/tutorials/impatient-r/#errors)
+
+# 11:10 Break
+
+# 11:25 Data in R
+* Vectors ("data can be structured")
+  * Make a vector with the `c` ("combine") function.
+    * Elements have a position and (optionally) names
+    * insects = c(bugs = 12.1, flies = 23.7, beetles = 3.1)
+    * insects2 = c(bugs = 7.1, flies = 3.8, beetles = 8.2)
+  - Concatenate vectors with `c` as well.
+    + insects3 = c(insects, insects2)
+  * The names are stored in a separate vector
+    * names(insects)
+  * Functions on vectors (mean, sum, var, max)
+    * mean(insects)
+    * sd(insects)
+  * Vector arithmetic: element by element
+    * insects + insects2
+    * insects / 3
+    * Recycling rule
+  * Comparison (==, all.equal())
+  * Subsetting ("getting data back out")
+    * insects["flies"]
+    * insects[2]
+    * insects[c(FALSE, TRUE, FALSE)]
+* Vectors always belong to *one* "type"
+* Classes of vectors
+  * logical: TRUE or FALSE
+  * integer: ..., -1, 0, 1, 2, ...
+  * numeric: 3.141592653589793115998, 2.718281828459045090796
+  * character: "anything", "ΣΔΘ™", 
+  * R "promotes" vectors when concatenated:
+    * c(insects, "not a number")
+* Factors: weird hybrid objects that don't always work as expected!
+  * Describes categories like experimental treatments
+    * "Nitrogen addition", "Phosphorous addition",  "Control"
+    * Stored internally as 1, 2, 3!
+- **Stop for questions**
+* Data frames ("related vectors in table format")
+  * This is where most of your data will live
+  * Rows are replicates; columns are variables
+    * InsectSprays
+    * plot(count ~ spray, data = InsectSprays)
+  * Different kinds of vectors in each column
+  * Functions on data.frames (e.g. colMeans)
+* Learning about your objects
+  * Rstudio, str
+  * head, tail
+  * length, dim, dimnames, class
+* [ versus [[ versus $
+  * Iris
+  * $ works on lists (including data frames). Pulls out _one_ element (e.g. a vector)
+  * [[ works on anything: pulls out _one_ element (e.g. a vector)
+  * [ works on anything: pulls out _one or more_ elements, leaving them in their original container (e.g. a dataframe).
+* Matrices are not data.frames!
+* NA
+
 # Noon: LUNCH
 
 # 12:45: Plotting
@@ -155,17 +205,32 @@
   * Other forms, *depending on the form of your data*
 * histograms
 * pairs plots
-* Adding lines/points to the canvas
+* Building a plot, piece by piece
+  * ```plot(
+      NULL, 
+      xlim = range(iris$Sepal.Length), 
+      ylim = range(iris$Sepal.Width),
+      xlab = "This is the x axis",
+      ylab = "This is the y axis"
+    )
+    points(iris$Sepal.Length, iris$Sepal.Width)
+    arrows(1, 1, 2, 2, lwd = 5)
+    text(x = 5, y = 3, labels = "Text", cex = 3)```
 * Plotting options (briefly flashed on screen for future reference)
-  * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty, mgp, axes
+  * main, xlab/ylab, log, type, sub, cex, pch, col, las, lty, lwd, xaxs/yaxs, bty, mgp, axes, type, asp
++ Graphics devices
 * Exporting figures
   * Rstudio graphics device
-  * PDF, PNG
+  * PDF, PNG, etc.
+    * One line to set up the graphics device 
+      * `pdf("myplot.pdf", length = 7, width = 5)`
+    * As many lines as you like to build your plot
+      - `plot(count ~ spray, data = InsectSprays)`
+    * One line to close the graphics device & seal up your file so it's readable
+      - `dev.off()`
 * Other graphics systems:
   * ggplot/ggvis
   * lattice
- 
-# 1:30 break
 
 # 1:45 Data import
 * read.csv()
