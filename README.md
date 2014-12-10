@@ -308,10 +308,3 @@
 * Helpful tools:
  * http://practicaldatamanagement.wordpress.com/2014/05/16/help-me-im-covered-in-bees-or-using-openrefine-to-clean-specimen-data/
 
-## Advanced: Reproducible research
-* Minimize copy-pasting
-* Keep your analysis and write-up in sync
-* http://andrewgelman.com/2014/09/19/never-happened-r-markdown/
-* RMarkdown, sweave, built into RStudio
-* Rstudio Projects
-  

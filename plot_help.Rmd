@@ -1,0 +1,74 @@
+# 1) highlighted window
+
+I knew how to do parts of this, so I started off with what I knew.  I used a beaver dataset that’s built into R.
+```{r}
+# Set up the plotting canvas with two rows of plots and one column
+par(mfrow = c(2, 1))
+
+# Plot the first beaver's temperature versus time
+plot(temp ~ time, data = beaver1, main = "Beaver 1")
+
+# Define a translucent yellow color. Alpha controls opacity
+translucent.yellow = rgb(red = 1, green = 1, blue = 0, alpha = .4)
+
+# Add a translucent yellow rectangle between 800 and 1500 on the x axis
+# and have it go way down below the bottom of the plotting canvas 
+# and way above the top.
+rect(xleft = 800, xright = 1500, ytop = 1000, ybottom = -1000, col = translucent.yellow, border = NA)
+
+# Plot the second beaver's temperature versus time
+plot(temp ~ time, data = beaver2, main = "Beaver 2")
+rect(xleft = 800, xright = 1500, ytop = 1000, ybottom = -1000, col = translucent.yellow, border = NA)
+```
+
+This took me most of the way there, but the highlighted region got interrupted between the two plots.  I had no idea how to do this part, so I googled it.  My search terms were
+
+*r stack overflow graphics outside window*
+ 
+which took me to [this](https://stackoverflow.com/questions/3932038/plot-a-legend-outside-of-the-plotting-area-in-base-graphics), which recommended "xpd".
+
+The top answer on the page recommended the obscure “xpd” graphical parameter.  I tried adding xpd = TRUE to the two “rect" commands, and it worked:
+
+```{r}
+
+# Set up the plotting canvas with two rows of plots and one column
+par(mfrow = c(2, 1))
+
+# Plot the first beaver's temperature versus time
+plot(temp ~ time, data = beaver1, main = "Beaver 1")
+
+# Define a translucent yellow color. Alpha controls opacity
+translucent.yellow = rgb(red = 1, green = 1, blue = 0, alpha = .4)
+
+# Add a translucent yellow rectangle between 800 and 1500 on the x axis
+# and have it go way down below the bottom of the plotting canvas 
+# and way above the top.
+rect(xleft = 800, xright = 1500, ytop = 1000, ybottom = -1000, col = translucent.yellow, border = NA, xpd = TRUE)
+
+# Plot the second beaver's temperature versus time
+plot(temp ~ time, data = beaver2, main = "Beaver 2")
+rect(xleft = 800, xright = 1500, ytop = 1000, ybottom = -1000, col = translucent.yellow, border = NA, xpd = TRUE)
+```
+
+
+ 
+ I then went and looked at the help file that discusses xpd (along with a whole zoo of other obscure graphics parameters) and found that I could save a line of code by turning xpd to NA instead of to FALSE.  This way, the box could cover both plots at once, instead of having to do it once for each plot.
+ 
+ 
+ # Set up the plotting canvas with two rows of plots and one column
+ par(mfrow = c(2, 1))
+ 
+ # Plot the first beaver's temperature versus time
+ plot(temp ~ time, data = beaver1, main = "Beaver 1")
+ 
+ # Define a translucent yellow color. Alpha controls opacity
+ translucent.yellow = rgb(red = 1, green = 1, blue = 0, alpha = .4)
+ 
+ # Plot the second beaver's temperature versus time
+ plot(temp ~ time, data = beaver2, main = "Beaver 2")
+ 
+ # Add a translucent yellow rectangle between 800 and 1500 on the x axis
+ # and have it go way down below the bottom of the plotting canvas 
+ # and way above the top.
+ rect(xleft = 800, xright = 1500, ytop = 1000, ybottom = -1000, col = translucent.yellow, border = NA, xpd = NA)
+ 

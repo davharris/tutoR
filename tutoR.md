@@ -3333,7 +3333,7 @@ system.time(
 
 ```
    user  system elapsed 
-  0.023   0.001   0.026 
+  0.013   0.000   0.014 
 ```
 
 Questions?
